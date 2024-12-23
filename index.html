@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Divertida</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: fuchsia;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #ff6347;
+            text-shadow: 2px 2px #ffa07a;
+        }
+        button {
+            background-color: #ff4500;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            background-color: #ff6347;
+            transform: scale(1.1);
+        }
+        img {
+            display: none;
+            margin-top: 20px;
+            max-width: 80%;
+            max-height: 80%;
+            border: 5px solid #ff4500;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>¡No pulses el botón!</h1>
+    <button onclick="mostrarImagen()">No pulsar</button>
+    <img id="imagen" src="ezso.jpg" alt="Imagen divertida">
+
+    <script>
+        function mostrarImagen() {
+            const imagen = document.getElementById('imagen');
+            imagen.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
